@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>刘梦真的简单网页程序</title>
+    <script>
+        var password = prompt('请输入刘梦真密码')
+        if (password == '123456') {
+            alert('密码输入正确')
+        } else {
+            alert('密码输入错误!')
+        }
+        
+        function color(str) {
+            document.body.style.backgroundColor = str;
+        }
+    </script>
+</head>    
+    
+<body>
+    <input type="button" value="设为红色" onclick="color('red')">
+    <input type="button" value="设为黄色" onclick="color('yellow')">
+    <input type="button" value="设为蓝色" onclick="color('blue')">
+    <input type="button" value="设为自定义颜色" onclick="color('#22ee00')">
+</body>
+
+</html>
