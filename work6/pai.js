@@ -5,5 +5,4 @@ function calculate(){
         document.getElementById('num').value = pi(num)
     }
 }
-function factorrial(n){
-    let sum = 1
+
