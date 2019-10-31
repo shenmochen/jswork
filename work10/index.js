@@ -24,12 +24,10 @@ function monkey(){
 function stat(){
     let str = document.getElementById("str").value
     let obj = {}
-    for(let i=0;i<str.length;i++){
-      if(!obj[str.charAt(i)]){
-          obj[str.charAt(i)]=1;
-      }else{
-          obj[str.charAt(i)]++
-      }
+    var array = str.split("")
+    array = array.sort()
+    for(var i=0,l=str.length;i<l;i++){
+        obj[array[i]]=(obj[array[i]]+1) || 1;
     }
-document.getElementById('result').innerText = JSON.stringify(obj)
+    document.getElementById('result').innerText = JSON.stringify(obj)
 }
