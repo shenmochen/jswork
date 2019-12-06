@@ -1,12 +1,11 @@
-import { parse } from "path";
-
 let endseconds = new Date().getTime() + 15 * 1000;
 let d = h = m = s = 0;
 let id = setInterval(seckill, 1000);
-function seckill() {
+
+function seckill(){
     let nowtime = new Date();
     let remaining = parseInt((endseconds - nowtime.getTime()) / 1000);
-    if (remaining > 0) {
+    if(remaining > 0){
         d = parseInt(remaining / 86400);
         h = parseInt((remaining / 3600) % 24);
         m = parseInt((remaining / 60) % 60);

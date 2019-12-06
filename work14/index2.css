@@ -1,22 +1,22 @@
-.box{
+.box {
     margin: 0 auto;
+    width: 700px;
     position: relative;
     background: url(ms.jpg);
     background-size: cover;
-    width: 702px;
     height: 378px;
 }
 
 .box div{
     float: left;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border: 1px solid #ccc;
     margin-left: 5px;
-    line-height: 50px;
+    line-height: 60px;
     text-align: center;
     color: red;
     position: relative;
-    top: 328px;
+    top: 330px;
     left: 350px;
 }
