@@ -94,7 +94,7 @@ function login(){
     req.end()
 }
 function geturl(){
-    let refer = `https://jwc.gdmec.edu.cn/js_main.aspx?xh=${user}`
+    let refer = `https://jwc.gdmec.edu.cn/xs_main.aspx?xh=$07190527`
     let opt = {
     headers:{
         'Referer':refer,
@@ -110,7 +110,7 @@ function geturl(){
             let buffer = Buffer.concat(chunks)
             let str =iconv.decode(buffer,'gbk')
             let $ = cheerio.load(str)
-            $('#kcmcgrid>tbody>tr>td:nth-child(2)').map(function(el){
+            $('#DBGrid>tbody>tr>td:nth-child(2)').map(function(el){
                 console.log($(this).text())
             })
         })
